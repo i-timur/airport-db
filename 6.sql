@@ -6,9 +6,3 @@ CREATE TABLE flight_crew (
 INSERT INTO crew (crew_role, first_name, last_name) VALUES ('PILOT', 'Sergey', 'Korolev'), ('PILOT', 'Viktor', 'Viktorovich');
 
 INSERT INTO flight_crew VALUES (7, 1), (8, 1), (9, 1), (1, 2), (2, 2);
-
-WITH pilots_cte AS (
-  SELECT * 
-  FROM crew
-  WHERE crew.role = 'PILOT'
-), 
